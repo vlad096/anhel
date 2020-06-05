@@ -1,0 +1,86 @@
+@import 'responsive'
+
+.main-footer
+	margin-bottom: 15px
+	&__wrap
+		display: flex
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.3)
+		border-top: 3px solid #203260
+		padding: 35px
+		+media(md)
+			flex-wrap: wrap
+			padding: 20px
+
+	&__title
+		font-size: 18px
+		line-height: 1.7
+		color: #203260
+		text-transform: uppercase
+		font-weight: 900
+		padding-bottom: 15px
+	&__code
+		font-size: 16px
+		line-height: 1.8
+		color: #262626
+		padding-bottom: 25px
+	&__item
+		&--block
+			max-width: 405px
+			+media(md)
+				max-width: 350px
+			+media(sm)
+				max-width: 100%
+			p
+				white-space: pre-line
+		&--text
+			max-width: 375px
+			margin-left: 25px
+			+media(md)
+				margin-left: 10px	
+				max-width: 350px
+			+media(sm)
+				max-width: 100%
+				margin-left: 0px	
+			p
+				font-size: 16px
+				line-height: 1.8
+				color: #262626
+				white-space: pre-line
+				padding-bottom: 30px
+				+media(sm)
+					font-size: 15px	
+					line-height: 1.2	
+		&--data
+			max-width: 275px
+			margin-left: 40px
+			+media(md)
+				margin-left: 0px
+				flex-basis: 100% 
+				order: 1
+	&__box
+		display: flex
+		align-items: center
+		margin-bottom: 16px
+		&--adress
+			align-items: flex-start
+		i
+			font-size: 20px
+			color: #203260
+	&__col
+		min-width: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+	&__data
+		font-size: 16px	
+		line-height: 1.5	
+		color: #fff
+		text-transform: uppercase
+		color: #203260
+		padding-left: 12px
+		&--email,
+		&--adress
+			font-size: 14px
+			line-height: 1.7
+		&--adress
+			text-transform: none

@@ -1,0 +1,25 @@
+@import 'responsive'
+
+.single
+	margin-top: -610px
+	margin-bottom: 50px
+	+media(lgxs)
+		margin-top: -550px
+	+media(sm)
+		margin-top: -500px
+	&__wrap
+		background-color: #fff
+		padding: 40px
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.2)
+		margin-top: 40px
+		+media(md)
+			padding: 20px
+	&__image
+		margin-bottom: 30px
+		img
+			width: 100%
+			display: block
+	&__text
+		p
+			&:not(:last-child)
+				padding-bottom: 30px
