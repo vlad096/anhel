@@ -1,0 +1,35 @@
+.payment {
+	margin-top: -610px;
+}
+
+.payment__wrap {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	padding: 40px;
+	margin-top: 40px;
+	margin-bottom: 55px;
+	min-height: 540px;
+}
+
+.payment__wrap p {
+	font-size: 18px;
+	line-height: 1.7;
+	white-space: pre-line;
+}
+
+@media screen and (max-width: 1150px) {
+
+.payment {
+	margin-top: -550px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.payment {
+	margin-top: -500px;
+}
+
+}
+

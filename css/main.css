@@ -1,0 +1,286 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #000000;
+	background-color: #ffffff;
+	font-size: 16px;
+	line-height: 1.7;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Montserrat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	fill: #eb0809;
+	transition: 0.3s fill;
+}
+
+.container {
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 5px;
+}
+
+.container--inner {
+	max-width: 1600px;
+	padding: 0px;
+}
+
+.advantages {
+	margin-top: -435px;
+}
+
+.advantages__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+
+.advantages__item {
+	width: calc(100% / 3 - 40px);
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 55px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 40px;
+	padding-bottom: 45px;
+	padding-bottom: 90px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+	border-bottom: 3px solid #203260;
+}
+
+.advantages__title {
+	font-size: 24px;
+	line-height: 1.25;
+	color: #203260;
+	text-transform: uppercase;
+	font-weight: 900;
+	min-height: 115px;
+	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
+}
+
+.advantages__text {
+	border-top: 1px solid #d4d4d4;
+	padding-top: 30px;
+}
+
+.about__wrap {
+	margin-bottom: 85px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+	padding: 50px;
+	padding-top: 45px;
+}
+
+.about__title {
+	font-size: 36px;
+	line-height: 1;
+	color: #203260;
+	text-transform: uppercase;
+	font-weight: 900;
+	border-bottom: 1px solid #d4d4d4;
+	padding-bottom: 30px;
+}
+
+.about__text {
+	padding-top: 30px;
+}
+
+.about__text p {
+	font-size: 18px;
+	line-height: 2;
+	color: #000000;
+}
+
+.about__text p span {
+	text-transform: uppercase;
+}
+
+.about__link {
+	max-width: 245px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 8px 15px;
+	background-color: #203260;
+}
+
+.about__link:hover {
+	background-color: #0d1426;
+}
+
+.contacts {
+	margin-bottom: 45px;
+}
+
+.contacts__image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.contacts__wrap {
+	max-width: 545px;
+	padding-left: 45px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.contacts__title {
+	font-size: 36px;
+	line-height: 1;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding-bottom: 22px;
+}
+
+.contacts__item {
+	margin-bottom: 15px;
+}
+
+.contacts__item label {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #fff;
+	padding-left: 20px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.contacts__item input,
+.contacts__item textarea {
+	width: 100%;
+	display: block;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 20px;
+}
+
+.contacts__item input::placeholder,
+.contacts__item textarea::placeholder {
+	font-size: 16px;
+	line-height: 1.7;
+	color: #4d4d4d;
+	text-transform: uppercase;
+}
+
+.contacts__item input:focus::placeholder,
+.contacts__item textarea:focus::placeholder {
+	color: transparent;
+}
+
+.contacts__item textarea {
+	resize: none;
+	min-height: 140px;
+}
+
+.contacts__button {
+	max-width: 235px;
+	margin-left: auto;
+	margin-top: 25px;
+	background-color: #203260;
+}
+
+.contacts__button[disabled] {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+.contacts__button:not(:disabled):hover {
+	background-color: #0d1426;
+}
+
+.contacts__error {
+	padding-left: 20px;
+	padding-bottom: 8px;
+	color: #8B0000;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+@media screen and (max-width: 960px) {
+
+.advantages__item {
+	width: calc(100% / 2 - 40px);
+	padding: 20px;
+}
+
+.about__wrap {
+	padding: 20px;
+	padding-bottom: 30px;
+}
+
+.contacts__wrap {
+	padding-left: 20px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+body {
+	line-height: 1.2;
+}
+
+.advantages__wrap {
+	margin: 0px;
+}
+
+.advantages__item {
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 30px;
+}
+
+.advantages__title {
+	min-height: auto;
+	padding-bottom: 15px;
+}
+
+.advantages__text {
+	padding-top: 15px;
+}
+
+.about__title {
+	font-size: 30px;
+}
+
+.contacts__wrap {
+	padding-right: 20px;
+}
+
+.contacts__button {
+	max-width: 100%;
+}
+
+}
+
